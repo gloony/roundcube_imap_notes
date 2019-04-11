@@ -1,0 +1,38 @@
+.toolbar a.button.extwin:before{
+  content: "\f360"}
+
+body>#layout>div.content .iframe-wrapper{
+  /* position: fixed; */
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0}
+
+#mailboxoptions-menu ul.toolbarmenu li a.delete.disabled{
+  display: none}
+
+#unsuscribe-menu{
+  margin-bottom: 0.4em}
+
+.message:hover #flagicnrcmrowOTE:before{
+  content: "\f005"}
+.messagelist span.flagged:before{
+  content: "\f005"}
+
+.messagelist td.flags span.attachment span.tag:before{
+  content: "\f02b"}
+.messagelist td.flags span.attachment span.tags:before{
+  content: "\f02c"}
+
+.toolbar a.button.threads:before{
+  content: "\f02c"}
+.toolbarmenu li a.expand.all:before, .toolbarmenu li a.expand.unread:before, .toolbarmenu li a.expand.none:before{
+  content: "\f02b"}
+
+.folderlist li.cat a:before{
+  font-weight: 600;
+  content: "\f02b"}
+.folderlist li.primary.cat a:before{
+  font-weight: 600;
+  content: "\f02c"}

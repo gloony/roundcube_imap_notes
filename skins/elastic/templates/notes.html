@@ -1,0 +1,51 @@
+<roundcube:include file="includes/layout.html" />
+<roundcube:include file="includes/menu.html" />
+
+<h1 class="voice"><roundcube:label name="imap_notes.notes" /></h1>
+
+<!-- messages list -->
+<div class="list listbox selected">
+  <div id="messagelist-header" class="header">
+    <a class="button icon menu-button" href="#menu"><span class="inner"><roundcube:label name="menu" /></span></a>
+    <!--<a class="button icon back-sidebar-button folders" href="#sidebar"><span class="inner"><roundcube:label name="mailboxlist" /></span></a>-->
+    <span class="header-title"><roundcube:var name="env:imap_notes_header_title" /></span>
+	<ul class="toolbar listing iconized" id="toolbar-list-menu" aria-hidden="true">
+	  <li role="menuitem">
+		<a href="#create" onClick="notes.get(-1, 'New note'); return false;" class="button create active" data-popup="createelect-menu" title="Create" aria-haspopup="true" aria-expanded="false" aria-owns="createelect-menu" data-original-title="Create"><span class="inner">Create</span></a>
+	  </li>
+	  <li role="menuitem">
+		<a href="#download" onClick="notes.download(); return false;" class="button download" data-popup="downloadelect-menu" title="Download" aria-haspopup="true" aria-expanded="false" aria-owns="downloadelect-menu" data-original-title="Download"><span class="inner">Download</span></a>
+	  </li>
+	  <li role="menuitem">
+		<a href="#delete" onClick="notes.delete(); return false;" class="button delete" data-popup="deleteelect-menu" title="Delete" aria-haspopup="true" aria-expanded="false" aria-owns="deleteelect-menu" data-original-title="Delete"><span class="inner">Delete</span></a>
+	  </li>
+	</ul>
+  </div>
+  <div id="messagelist-content" class="scroller" tabindex="-1">
+    <h2 id="aria-label-messagelist" class="voice"><roundcube:label name="arialabelmessagelist" /></h2>
+    <table id="messagelist" class="listing messagelist sortheader fixedheader focus" aria-labelledby="aria-label-messagelist" data-list="message_list" data-label-msg="The list is empty.">
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- message preview -->
+<div class="content">
+  <h2 id="aria-label-toolbar" class="voice"><roundcube:label name="arialabeltoolbar" /></h2>
+  <div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
+    <a class="button icon back-list-button" href="#back"><span class="inner"><roundcube:label name="back" /></span></a>
+    <span class="header-title"></span>
+  </div>
+  <h2 id="aria-label-mailpreviewframe" class="voice"><roundcube:label name="arialabelmailpreviewframe" /></h2>
+  <div class="iframe-wrapper">
+    <roundcube:object name="contentframe"
+                      id="messagecontframe"
+                      aria-labelledby="aria-label-mailpreviewframe"
+                      src="./plugins/imap_notes/skins/elastic/templates/watermark.html"
+                      title="arialabelmailpreviewframe"
+                      />
+  </div>
+</div>
+
+<roundcube:include file="includes/footer.html" />
