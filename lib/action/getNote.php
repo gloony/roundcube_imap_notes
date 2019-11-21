@@ -23,46 +23,8 @@
 	<head>
 		<title><?php // echo basename($cFile); ?></title>
 		<script src="program/js/jquery.min.js?s=1535544655" type="text/javascript"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/lib/codemirror.js?v1549551772"></script>
-		<link href="plugins/imap_notes/lib/codemirror/lib/codemirror.css?v1549551772" rel="stylesheet" type="text/css" />
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/comment/comment.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/dialog/dialog.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/display/fullscreen.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/display/panel.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/display/rulers.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/edit/closebrackets.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/edit/closetag.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/edit/matchbrackets.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/edit/matchtags.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/edit/trailingspace.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/fold/brace-fold.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/fold/foldcode.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/fold/foldgutter.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/fold/xml-fold.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/hint/anyword-hint.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/hint/show-hint.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/merge/merge.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/mode/overlay.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/scroll/annotatescrollbar.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/scroll/simplescrollbars.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/search/jump-to-line.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/search/match-highlighter.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/search/matchesonscrollbar.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/search/search.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/search/searchcursor.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/selection/active-line.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/addon/wrap/hardwrap.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/keymap/sublime.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/mode/markdown/markdown.js?v1549551772"></script>
-		<script type="text/javascript" src="plugins/worldesk/js/plugin/codemirror/mode/properties/properties.js?v1549551772"></script>
-		<link href="plugins/imap_notes/lib/codemirror/addon/dialog/dialog.css?v1549551772" rel="stylesheet" type="text/css" />
-		<link href="plugins/imap_notes/lib/codemirror/addon/display/fullscreen.css?v1549551772" rel="stylesheet" type="text/css" />
-		<link href="plugins/imap_notes/lib/codemirror/addon/hint/show-hint.css?v1549551772" rel="stylesheet" type="text/css" />
-		<link href="plugins/imap_notes/lib/codemirror/addon/lint/lint.css?v1549551772" rel="stylesheet" type="text/css" />
-		<link href="plugins/imap_notes/lib/codemirror/addon/merge/merge.css?v1549551772" rel="stylesheet" type="text/css" />
-		<link href="plugins/imap_notes/lib/codemirror/theme/elegant.css?v1549551772" rel="stylesheet" type="text/css" />
-		<link href="plugins/imap_notes/lib/codemirror_addon/theme/github-light.css?v1542363968" rel="stylesheet" type="text/css" />
-		<!--<link rel="stylesheet" type="text/css" href="plugins/imap_notes/css/notepad.css?v">-->
+		<script type="text/javascript" src="plugins/imap_notes/lib/codemirror/codemirror.min.js"></script>
+		<link href="plugins/imap_notes/lib/codemirror/codemirror.min.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<textarea id="notepadarea" class="CodeMirror"><?php $hsc = htmlspecialchars($body); if($hsc!=""){ echo $hsc; }else{ echo $body; } ?></textarea>
